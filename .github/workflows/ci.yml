@@ -1,9 +1,9 @@
 name: CareUEveryDay Cron CI
 
 on:
-  schedule:
-    - cron: '0 23 * * *'
-
+  push:
+    branches:
+      - edit
 jobs:
   build:
     runs-on: ubuntu-latest
